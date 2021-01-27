@@ -5,28 +5,26 @@
 .menu{
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(92, 87, 87,0.1);
+    background-color: rgb(92, 87, 87,0.5);
+
 
 }
 ul{
     padding: 20px;
-    padding-right: 50px;
+    padding-right: 60px;
 }
 ul li{
     list-style: none;
     display: inline;
-    padding:40px ;
-
-
+    padding:20px ;
 }
 ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
 }
-.menu ul li a:hover {
+.menu ul li:hover {
     background-color:orange;
-    padding: 20px;
   }
 body{
     background-repeat: no-repeat;  
@@ -36,9 +34,10 @@ body{
     width: 100%;
     height: 100vh;
 }
-h2{
+.register h2, .map h2{
     color: white;
     padding-left: 50%;
+    margin-bottom: 10px;
 }
 form{
     width: 95%;
@@ -74,6 +73,7 @@ input[type=submit]{
 }
 textarea{
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 .reandmap{
     display: flex;
@@ -86,17 +86,28 @@ textarea{
 .footer ul li{
     padding-right: 20px;
     padding-left: 20px;
-    padding-bottom: 0;
+
 }
 .donwlond{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
+    margin-left: 27%;
+}
+.donwlond img {
+    margin-top: 3%;
+}
+.donwlond h3{
+    margin-top: 10px;
+    margin-left: 18%;
+
+    width: 23%;
+    border: 2px rgb(12, 166, 213);
+    border-radius: 5px;
+    background-color: rgb(0, 81, 255);
+    color: white;
 }
 .name{
-    background-color: rgb(63, 65, 66, 0,9);
+padding: 20px;
     color: white;
-    padding-left: 20px;
+ 
 }
 h4{
     font-size: 70px;
@@ -104,14 +115,18 @@ h4{
 h1{
     font-size: 100px;
 }
-.personal{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
+.personal .name h2{
+    margin-left: 37%;
+    margin-top: 50px;
+    margin-bottom: 130px;
+    font-size: 50px;
 }
-.personal img {
-    width: 20%;
-    margin-bottom: 70px;
-    height: 80vh;
-    border-radius: 50%;
+@media screen and (max-width:800px){
+    
+    .reandmap{
+        display: block;
+    }
+    input[type=reset],input[type=submit]{
+        width: 100%;
+    }
 }
