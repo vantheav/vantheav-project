@@ -1,40 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal</title>
-    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <div class="container">
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="#">about me</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="">Photos</a></li>
-            </ul>
-        </div>
-        <div class="donwlond">
-            <img src="images/personal.PNG" alt="">
-            <div class="donw">
-            <a href="images/personal.PNG" download>
-                <h3><i class="fa fa-cloud-download" style="font-size:36px"> Donwlond</i></h3>
-              </a>
-            </div>
-        </div> 
-        <div class="footer">
-            <ul>
-                <li><a href="https://twitter.com/?lang=en" target="_blank" class="hrv-bob"><i class="fa fa-twitter-square" style="font-size:36px"></i></a></li>
-                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-square" style="font-size:36px"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" style="font-size:36px"></i></a></li>
-                <li><a href="https://telegram.org/" ><i class="fa fa-telegram" style="font-size:36px"></i></a></li>
-            </ul>
-        </div>
-    </div>
-</body>
-</html>
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(92, 87, 87,0.7);
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+
+}
+ul{
+    padding: 20px;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    padding:20px ;
+}
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.menu ul li:hover {
+    background-color:orange;
+}
+ul li a .active{
+    background-color: #2196F3;
+    color: white;
+}
+.container{
+    width: 100%;
+    c
+    
+}
+.personal{
+    text-align: center;
+    height: 90vh;
+    
+}
+.personal .name h4{
+    margin-right: 30%;
+    color: aqua;
+    margin-bottom: 5%;
+}
+.personal .name h2{
+    font-size: 60px;
+    color: aqua;
+}
+.personal .name h1{
+    color: aqua;
+    margin-bottom:5% ;
+}
+.register h2, .map h2{
+    color: white;
+    padding-left: 50%;
+    margin-bottom: 10px;
+}
+form{
+    width: 95%;
+    padding-left: 20px;    
+}
+.map{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+input[type=text],input[type=email]{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 2px solit;
+    border-radius: 5px;
+}
+input[type=reset]{
+    width: 49.6%;
+    height: 30px;
+    text-transform: uppercase;
+    background-color: tomato;
+    border-radius: 10px;
+    color: white;
+}
+input[type=submit]{
+    width: 49.6%;
+    height: 30px;
+    text-transform: uppercase;
+    background-color: teal;
+    border-radius: 10px;
+    color: white;
+}
+textarea{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.reandmap , .contact{
+    display: flex;
+    align-items: space-around;
+}
+ 
+.donwlond{
+    text-align: center;
+}
+.donwlond img{
+    width: 60%;
+}
+.donwlond h3{
+    font-size: 40px;
+    width: 100%;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+
+
+.name{
+    padding: 20px;
+    color: white;
+ 
+}
+h4{
+    font-size: 70px;
+}
+h1{
+    font-size: 100px;
+}
+
+
+@media screen and (max-width:800px){
+    
+    .reandmap{
+        display: block;
+    }
+    input[type=reset],input[type=submit]{
+        width: 100%;
+    }
+}
