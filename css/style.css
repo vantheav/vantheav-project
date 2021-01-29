@@ -43,14 +43,18 @@ ul li a {
     font-size: 50px;
     background-image: url(https://blog.depositphotos.com/wp-content/uploads/2017/07/Soothing-nature-backgrounds-2-1024x684.jpg);
     background-size: cover;
-    color: aqua;
+    color: rgb(0, 255, 238);
 }
-.home .name h4{
-    padding-top: 30px;
-    padding-bottom: 40px;
+.name img{
+    width: 20%;
 }
-.home .name h1{
-    padding-bottom: 40px;
+.home{
+    text-align: center;
+}
+.home h5{
+    margin-top: 30px;
+    background-color: rgba(74, 67, 68, 0.687);
+
 }
 .donwlond{
     text-align: center;
@@ -173,7 +177,7 @@ td{
         text-align: center;
     }
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:700px){
     input[type=reset],input[type=submit]{
         width:94%;
         margin-bottom:10px;
@@ -185,6 +189,21 @@ td{
     .donwlond a button{
         width: 200px;
     }
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+   ul li{
+       display: flex;
+     
+   }
+   .home h5{
+       font-size: 30px;
+   }
+
+  
 }
 
 html{
